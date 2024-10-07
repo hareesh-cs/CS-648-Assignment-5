@@ -1,6 +1,10 @@
+/* Color Variables */
+/* Font Variables */
+/* Image Paths */
+/* Backgrounds */
 /* BASIC STYLES */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, sans-serif;
   font-size: 1em;
   line-height: 2em;
   background: url("../images/bg.gif") #fff repeat-x;
@@ -12,6 +16,12 @@ main {
   margin: 0 auto;
   padding: 0 10px;
 }
+
+section {
+  width: 100%;
+}
+
+/* Media Queries for responsiveness */
 @media (max-width: 959px) {
   main {
     width: 768px;
@@ -26,14 +36,10 @@ main {
   main {
     width: 300px;
   }
-}
-
-@media (max-width: 459px) {
   section {
     width: 95%;
   }
 }
-
 figure {
   background: url("../images/logo.png") no-repeat 0 50px;
   display: block;
@@ -44,10 +50,8 @@ figure {
 }
 @media (max-width: 959px) {
   figure {
-    width: auto;
-    height: 140px;
-    float: none;
     background-position: center;
+    height: 140px;
   }
 }
 @media (max-width: 459px) {
@@ -64,10 +68,8 @@ nav {
 }
 @media (max-width: 959px) {
   nav {
-    width: auto;
-    height: 50px;
-    float: none;
     text-align: center;
+    height: 50px;
   }
 }
 @media (max-width: 459px) {
@@ -116,7 +118,6 @@ header {
   text-align: center;
   padding-top: 40px;
 }
-
 header img {
   max-width: 100%;
   height: auto;
@@ -131,12 +132,16 @@ header img {
     margin-bottom: 80px;
   }
 }
-
+header h1,
+header h2,
+header h3 {
+  margin-bottom: 50px;
+}
 header h1 {
   color: #e65c43;
   font-weight: 100;
   font-size: 4em;
-  line-height: 0;
+  line-height: 1;
 }
 @media (max-width: 959px) {
   header h1 {
@@ -149,17 +154,16 @@ header h1 {
   }
 }
 @media (max-width: 459px) {
-  header h1 :first-child {
+  header h1:first-child {
     font-size: 1.4em;
     margin-bottom: 20px;
   }
 }
-
 header h2 {
   color: #fff;
   font-weight: 900;
   font-size: 2.5em;
-  line-height: 0;
+  line-height: 1;
   margin-bottom: 70px;
 }
 @media (max-width: 959px) {
@@ -177,13 +181,11 @@ header h2 {
     font-size: 1.4em;
   }
 }
-
 header h3 {
   color: #666;
   font-weight: 400;
   font-size: 2em;
-  line-height: 0;
-  margin-bottom: 50px;
+  line-height: 1;
 }
 @media (max-width: 767px) {
   header h3 {
@@ -213,7 +215,6 @@ header h3 {
 @media (max-width: 767px) {
   #headline h1 {
     font-size: 2em;
-    padding-top: 50px;
   }
 }
 @media (max-width: 459px) {
@@ -261,13 +262,15 @@ header h3 {
   }
 }
 @media (max-width: 959px) {
-  #content > #testimonials, #content > #products {
+  #content > #testimonials,
+  #content > #products {
     width: 46%;
     margin: 0 2%;
   }
 }
 @media (max-width: 767px) {
-  #content > #testimonials, #content > #products {
+  #content > #testimonials,
+  #content > #products {
     width: 96%;
     margin: 0 2%;
     float: none;
@@ -283,7 +286,8 @@ header h3 {
 }
 
 @media (max-width: 659px) {
-  #content article img, > .greybar {
+  #content article img,
+  > .greybar {
     display: none;
   }
 }
@@ -291,7 +295,7 @@ header h3 {
 footer {
   width: 100%;
   height: 120px;
-  background: #30353D;
+  background: #30353d;
   text-align: center;
   color: #fff;
   padding-top: 50px;
@@ -301,7 +305,8 @@ footer {
     text-align: center;
   }
 }
-footer > p, footer > img {
+footer > p,
+footer > img {
   float: none;
   margin: 0;
 }
@@ -321,14 +326,14 @@ footer > p, footer > img {
   margin-right: 5px;
 }
 .social-media div.one {
-  background: url("../images/social-media.png")-0px 0;
+  background: url("../images/social-media.png") 0px 0;
 }
 .social-media div.two {
-  background: url("../images/social-media.png")-38px 0;
+  background: url("../images/social-media.png") -38px 0;
 }
 .social-media div.three {
-  background: url("../images/social-media.png")-76px 0;
+  background: url("../images/social-media.png") -76px 0;
 }
 .social-media div.four {
-  background: url("../images/social-media.png")-114px 0;
+  background: url("../images/social-media.png") -114px 0;
 }

@@ -1,33 +1,31 @@
-@mixin image($offest: 0px) {
-  background: url($socialMediaImg) - 38px * $offest 0;
+@mixin image($offset: 0px) {
+  background: url($social-media-img) calc(-38px * $offset) 0;
 }
 
-@mixin headers($color, $fnt-wt, $fnt-size, $li-ht: 0) {
+@mixin headers($color, $font-weight, $font-size, $line-height: 1) {
   color: $color;
-  font-weight: $fnt-wt;
-  font-size: $fnt-size;
-  line-height: $li-ht;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
-@mixin content-styles($width, $float) {
+@mixin content-styles($width, $float: none) {
   width: $width;
   float: $float;
 }
 
-@mixin break-at($args) {
-  @if length($args) == 1 {
-    @media (max-width: nth($args, 1)) {
-      @content;
-    }
+@mixin break-at($max-width) {
+  @media (max-width: $max-width) {
+    @content;
   }
 }
 
-@mixin width-height($width, $height) {
+@mixin width-height($width: auto, $height: auto) {
   width: $width;
   height: $height;
 }
 
-@mixin navbar($width, $height, $float) {
+@mixin navbar($width: 100%, $height: auto, $float: none) {
   @include width-height($width, $height);
   float: $float;
 }

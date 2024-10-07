@@ -1,9 +1,19 @@
-$red: #e65c43;
+/* Color Variables */
+$primary-color: #e65c43;
+$secondary-color: #f25c43;
 $white: #fff;
 $gray: #666;
-$bodyFont: "Roboto";
-$bodyBgImg: '../images/bg.gif';
-$logoImg: '../images/logo.png';
-$socialMediaImg: '../images/social-media.png';
-$graybarBg: #f5f6f6;
-$headlineBg: #f25c43;
+$graybar-bg: #f5f6f6;
+
+/* Font Variables */
+$body-font: "Roboto", sans-serif;
+$base-font-size: 16px; // Base font size for easier scaling
+$line-height: 1.5; // Default line height
+
+/* Image Paths */
+$body-bg-img: '../images/bg.gif';
+$logo-img: '../images/logo.png';
+$social-media-img: '../images/social-media.png';
+
+/* Backgrounds */
+$headline-bg: $secondary-color; // Reuse primary color for headline background

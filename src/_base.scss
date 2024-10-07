@@ -1,9 +1,9 @@
 /* BASIC STYLES */
 body {
-  font-family: $bodyFont, sans-serif;
+  font-family: $body-font, sans-serif;
   font-size: 1em;
   line-height: 2em;
-  background: url($bodyBgImg) $white repeat-x;
+  background: url($body-bg-img) $white repeat-x;
   margin: 0;
 }
 
@@ -11,19 +11,31 @@ main {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  @include break-at(959px) {
-    width: 768px;
-  }
-  @include break-at(767px) {
-    width: 460px;
-  }
-  @include break-at(459px) {
-    width: 300px;
-  }
 }
 
 section {
-  @include break-at(459px) {
+  width: 100%; // Default width for sections
+}
+
+/* Media Queries for responsiveness */
+@include break-at(959px) {
+  main {
+    width: 768px;
+  }
+}
+
+@include break-at(767px) {
+  main {
+    width: 460px;
+  }
+}
+
+@include break-at(459px) {
+  main {
+    width: 300px;
+  }
+
+  section {
     width: 95%;
   }
 }

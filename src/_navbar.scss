@@ -1,13 +1,13 @@
 figure {
-  background: url($logoImg) no-repeat 0 50px;
+  background: url($logo-img) no-repeat 0 50px;
   display: block;
   margin: 0;
-  
+
   @include navbar(400px, 190px, left);
 
   @include break-at(959px) {
-    @include navbar(auto, 140px, none);
     background-position: center;
+    height: 140px;
   }
 
   @include break-at(459px) {
@@ -20,8 +20,8 @@ nav {
   @include navbar(540px, 190px, left);
 
   @include break-at(959px) {
-    @include navbar(auto, 50px, none);
     text-align: center;
+    height: 50px;
   }
 
   @include break-at(459px) {
@@ -38,7 +38,7 @@ nav {
       margin-right: 10px;
 
       a {
-        color: $red;
+        color: $primary-color;
         text-decoration: none;
         letter-spacing: -0.01em;
 
